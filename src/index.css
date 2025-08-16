@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand Colors */
+  --color-prama-blue: #1e4fa1;
+  --color-prama-orange: #f58634;
+  --color-prama-green: #3bb54a;
+  --color-prama-white: #ffffff;
+  --color-prama-dark: #222222;
+
+  /* Z-index levels */
+  --z-navbar: 50;
+  --z-sidebar: 40;
+  --z-modal: 100;
+  --z-overlay: 90;
+  --z-dropdown: 60;
+
+  /* Spacing */
+  --space-base: 1rem;
+  --space-lg: 2rem;
+
+  /* Border Radius */
+  --radius-base: 6px;
+  --radius-lg: 12px;
+
+  /* Shadows */
+  --shadow-base: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0px 4px 10px rgba(0, 0, 0, 0.15);
+
+  /* Scrollbar variables */
+  --hide-scrollbar: none;
+  --scrollbar-width: 8px;
+  --scrollbar-thumb-color: #888;
+  --scrollbar-thumb-hover: #555;
+  --scrollbar-track-color: #f1f1f1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hide scrollbar */
+.hide-scrollbar {
+  scrollbar-width: var(--hide-scrollbar); /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* Custom scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-width);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track-color);
+}
